@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="admin-wrap">
+
+<!-- SIDEBAR -->
+
+<div class="admin-side">
+
+<div class="admin-brand">
+<h2>UX-<span>URDUJA</span>-YOT</h2>
+<p>Admin Panel</p>
+</div>
+
+<div class="aside-item active" data-sec="videos">Videos</div>
+<div class="aside-item danger" onclick="adminLogout()">Logout</div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="admin-main">
+
+<div class="admin-topbar">
+<h1>Manage Videos</h1>
+</div>
+
+<div class="admin-body">
+
+<!-- ADD VIDEO -->
+
+<div class="aform">
+
+<h3>Upload Video</h3>
+
+<div class="fgrid">
+
+<div class="fg fw">
+<label class="flbl">Title</label>
+<input id="vTitle" class="finput">
+</div>
+
+<div class="fg">
+<label class="flbl">Category</label>
+<select id="vCategory" class="fsel">
+<option>milf</option>
+<option>tease</option>
+<option>squirt</option>
+<option>webcam</option>
+<option>masturbation</option>
+</select>
+</div>
+
+<div class="fg">
+<label class="flbl">Duration</label>
+<input id="vDuration" class="finput" placeholder="10:22">
+</div>
+
+<div class="fg fw">
+<label class="flbl">Video URL (mp4 / embed)</label>
+<input id="vUrl" class="finput">
+</div>
+
+<div class="fg fw">
+<label class="flbl">Thumbnail URL</label>
+<input id="vThumb" class="finput">
+</div>
+
+<div class="fg fw">
+<label class="flbl">Description</label>
+<textarea id="vDesc" class="ftxt"></textarea>
+</div>
+
+<div class="fcheck-row">
+<input type="checkbox" id="vFeatured">
+<label for="vFeatured">Featured</label>
+</div>
+
+<br>
+
+<button class="btn btn-p" onclick="addVideo()">Upload Video</button>
+
+</div>
+</div>
+
+<!-- VIDEO LIST -->
+
+<div class="aform">
+
+<h3>All Videos</h3>
+
+<div id="videoList"></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script src="main2.js"></script>
+
+</body>
+</html>
